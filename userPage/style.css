@@ -12,10 +12,11 @@ html,body{
 }
 #main{
     width: 100%;
+    position: relative;
 }
 #nav{
-    position: relative;
-    padding: 2vw 10vw;
+    position:sticky;
+    padding: 1vw 5vw;
     display: flex;
     justify-content: space-between;
     background: rgba(103, 96, 96, 0.1);
@@ -301,3 +302,9 @@ button{
     background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,244,252,0.6605085271413254) 100%);
 }
+
+/* .getStartedButton {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+} */
