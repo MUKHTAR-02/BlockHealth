@@ -15,8 +15,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111;
+    /* border-color: aquamarine; */
     font-family: 'roboto', sans-serif;
+}
+
+.card {
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-parent{
@@ -49,7 +58,8 @@ body{
     width: 50%;
     min-width: 300px;
     height: 100%;
-    background: #171717;
+    background: white;
+    /* opacity: 0.5; */
     transition: 1s;
     left: 0;
     display: grid;
@@ -92,12 +102,12 @@ input{
     border: none;
     border-radius: 5px;
     height: 30px;
-    background: #504d4d;
+    background: black;
     color: #fff;
 }
 
 ::placeholder{
-    color: #1f1e1e;
+    color: white;       
 }
 
 .btn{
