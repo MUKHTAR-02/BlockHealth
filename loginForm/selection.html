@@ -1,36 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="selection.css">
-    <title>Who are you</title>
-</head>
-<body>
-    <div class="container">
-        <div class="card">
-            <div class="main">
-                <div id="box1">
-                    <div id="bleft">
-                        <img src="doc-img.webp" alt="Doc img" width="170">
-                    </div>
-                    <div id="bright">
-                        <p> Are you a DOC! </p>
-                        <div id="nright"><a href="/loginForm/index.html "> <Button>Welcome</Button></a></div>
-                    </div>
-                </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-                <div id="box2">
-                    <div id="bleft">
-                        <img src="patient-img.jpg" alt="Doc img" width="170">
-                    </div>
-                    <div id="bright">
-                        <p> Lookin for DOC! </p>
-                        <div id="nright"><a href="/loginForm/index.html "> <Button>Welcome</Button></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+.container {
+    background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+
+    /* glass morpho */
+    background: rgba(65, 194, 181, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.main {
+    color: rgb(0, 0, 0);
+    height: 80vh;
+    width: 80vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box1, #box2 {
+    border: 2px solid rgba(0, 0, 0, 0.973);
+    border-radius: 20px;
+    height: 30vh;
+    width: 50vw;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bright p, #bleft p {
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius:20px;
+    border: none;
+    /* for glow */
+    box-shadow: 0 0 5px lightseagreen, 
+    0 0 25px lightseagreen;
+    background-color: rgba(32, 178, 171, 0.637);
+}
+
+button:hover {
+    box-shadow: 0 0 5px lightseagreen,
+    0 0 25px lightseagreen, 0 0 50px lightseagreen, 0 0 100px lightseagreen, 0 0 200px lightseagreen;
+}
