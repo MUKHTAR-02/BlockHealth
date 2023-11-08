@@ -26,6 +26,11 @@ html,body{
     display: flex ;
     gap: 30px;
 }
+
+/* #nright{
+
+} */
+
 #nav a{
     font-weight: 700;
     text-decoration: none;
@@ -299,8 +304,16 @@ html,body{
 button{
     padding: 10px 20px;
     border-radius:20px;
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,244,252,0.6605085271413254) 100%);
+    border: none;
+    /* for glow */
+    box-shadow: 0 0 5px lightseagreen, 
+    0 0 25px lightseagreen;
+    background-color: rgba(32, 178, 171, 0.637);
+}
+
+button:hover {
+    box-shadow: 0 0 5px lightseagreen,
+    0 0 25px lightseagreen, 0 0 50px lightseagreen, 0 0 100px lightseagreen, 0 0 200px lightseagreen;
 }
 
 /* .getStartedButton {
