@@ -1,47 +1,414 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
-
-
-html,
-body {
+html,body{
     width: 100%;
     height: 100%;
-
-
 }
-
-#main {
+#main{
     width: 100%;
-    position: relative;
+    height: 100%;
+    /* background-image: url(/loginForm/evie-s-Sw7f58YJbc0-unsplash.jpg); */
+    /* position: relative; */
 }
 
-#nav {
-    position: sticky;
+#hero{
+    /* justify-content: center;
+    align-items: center; */
+    /* position:relative; */
+    /* display: flex; */
+    width:100vw;
+    height: 85vh;
+    
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    /* align-items: center; */
+    /* padding: 0vw 10vw; */
+    /* margin-top: 10vw; */
+    /* object-fit: cover; */
+
+    /* bg img */
+    /* background-image: url("bgHeadingImg3.jpg");
+    background-repeat: no-repeat;
+    object-fit: fill; */
+}
+
+#nav{
+    /* position:fixed; jb tk ye prop true h tb tk underline effect nhi aa paiga "BlockHealth" pr */
     padding: 1vw 5vw;
+    /* height: 6   0px; */
+    width: auto;
+    /* height: 600px; */
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background: rgba(103, 96, 96, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
 }
 
-#nleft {
-    display: flex;
+#nleft a:hover{
+    background-color: lightseagreen;
+    transition: 1.25s;
+    opacity: 0.6;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+
+#nleft{
+    display: flex ;
     gap: 30px;
+    height: 4vh;
 }
 
+#nleft a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* #nright{
 
 } */
 
-#nav a {
+#nav a{
     font-weight: 700;
     text-decoration: none;
     color: black;
     font-size: 15px;
+}
+
+#nav #centertag{
+    position: absolute;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#block{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* margin-top: -200px; */
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+#imgtext {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    font-size: xx-large ;
+    font-weight: bolder;
+    /* background-color: aquamarine; */
+}
+
+#block h1{
+    font-size: 6vw;
+    font-weight: 400;
+    letter-spacing: -.6vw;
+    line-height: 1;
+}
+/* #block #headings{
+    position: absolute;
+    top: -22%;
+    left: -20%;
+} */
+#block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 15.05%;
+}
+#block p{
+    margin-top: -100px;
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    line-height: 1.3;
+    width: 50%;
+}
+#circlev{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    
+}
+#circlev {
+    color: #1a1818;
+}
+#visit{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#motive{
+    margin-top: 10vw;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 0vw 10vw; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+#motive p{
+    line-height: 1.7;
+    font-weight:600;
+    /* margin-left: 10rem; */
+    /* position: relative; */
+    /* right: 0; */
+    letter-spacing: -.1vw;
+    font-size: 1.5vw;
+    width: 80%;
+
+}
+#motive span{
+    display: inline-block;
+    
+    margin: 0px 10px;
+    background-color: red;
+    border-radius: 100px;
+    margin:  0px 13px;
+    margin-bottom: -12.5px;
+}
+#onespan{
+    width: 80px;
+    height: 40px;
+    background-image: url(etactics-inc-2qiXVelOgyw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#twospan{
+    width: 120px;
+    height: 50px;
+    background-image: url(myriam-zilles-KltoLK6Mk-g-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#threespan{
+    width: 70px;
+    height: 40px;
+    background-image: url(traxer-Kb4pzjYleTg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#security{
+    width: 100%;
+
+    height: 100%;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#securityInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+#securityText{
+    font-size: 13px;
+    text-align: center;
+    margin-left: 10px;
+    /* margin-right: 65vw; */
+    margin-top: 20px;
+    font-weight: 600;
+    opacity: .8;
+    text-transform: capitalize;
+}
+#security #securityImg{
+    position: relative;
+    width: 250rem;
+    height: 20vw;
+    overflow: hidden;
+    background-color: green;
+    border-radius: 20px;
+}
+#securityImg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#pictures{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    padding: 3vw;
+    padding-left: 14vw;
+    padding-right: 12vw;
+}
+#firstbox{
+    width: 17vw;
+}
+#firstbox #firstpic{
+    width: 100%;
+    height: 24vw;
+    margin-bottom: 1vw;
+    
+}
+#firstpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#firstbox h2,#secpic h2{
+    letter-spacing:-.1vw ;
+    font-weight: 100;
+    border-radius: 20px;
+     font-size: 2vw;
+    
+}
+#firstbox p,#secpic p{
+    font-size: 14px;
+    opacity: .8;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+#secbox #firstpic{
+    width: 100%;
+    height: 42vw;
+    margin-bottom: 1vw;
+    border-radius: 20px;
+    
+}
+#secbox{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#banner{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 8vw;
+
+}
+#bimg{
+    width: 65%;
+    height: 60vh;
+    background-color: yellow;
+    border-radius: 20px;
+}
+#bimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#banner2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    margin-top: 8vw;
+    margin-left: 30px;
+
+}
+
+#bimg2{
+    width: 65%;
+    height: 60vh;
+}
+#bimg2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#btext{
+    width: 35%;
+    padding: 0px 3vw;
+}
+#btext h1{
+    font-size: 3vw;
+    font-weight: 500;
+    letter-spacing: -.1vw;
+    line-height: 1;
+}
+#future{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+}
+#future iframe{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 100%;
+     height: 100%;
+     
+}
+#ftext{
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#ftext button{
+    margin-top: 10px;
+    padding: 1vw 1.3vw;
+    font-size: .9vw;
+    font-weight: 700;
+    border-radius: 100px;
+     border: 1px solid rgb(83, 74, 74);
+     background-color: white;
+     color: rgb(59, 52, 52);
+}
+#login{
+    align-items: center;
+    padding: 0px 20px;
+
+}
+button{
+    padding: 10px 20px;
+    border-radius:20px;
+    border: none;
+    /* for glow */
+    box-shadow: 0 0 5px lightseagreen, 
+    0 0 25px lightseagreen;
+    background-color: rgba(32, 178, 171, 0.637);
+}
+
+button:hover {
+    box-shadow: 0 0 5px lightseagreen,
+    0 0 25px lightseagreen, 0 0 50px lightseagreen, 0 0 100px lightseagreen, 0 0 200px lightseagreen;
 }
 
 /*(code starts here) Hover underline animation on "BlockHeakth" navbar text */
@@ -70,327 +437,4 @@ body {
 }
 
 /*(code ends here) Hover underline animation on "BlockHeakth" navbar text */
-#hero {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 0vw 10vw;
-    margin-top: 15vw;
-}
 
-#nav #centertag {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#security {
-    width: 15vw;
-}
-
-#security p {
-    font-size: 12px;
-    margin: 10px 0;
-    font-weight: 600;
-    opacity: .5;
-    text-transform: capitalize;
-}
-
-#security #secimg {
-    position: relative;
-    width: 100%;
-    height: 20vw;
-    overflow: hidden;
-    background-color: green;
-    border-radius: 20px;
-}
-
-#secimg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#block {
-    position: relative;
-    width: 30vw;
-    min-height: 42vw;
-}
-
-#imgtext {
-    width: fit-content;
-    height: fit-content;
-}
-
-#block h1 {
-    font-size: 6vw;
-    font-weight: 400;
-    letter-spacing: -.6vw;
-    line-height: 1;
-}
-
-#block #headings {
-    position: absolute;
-    top: -22%;
-    left: -20%;
-}
-
-#block img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#block p {
-    margin-top: 30px;
-    font-size: 1.3vw;
-    line-height: 1.3;
-    width: 50%;
-}
-
-#circlev {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3vw;
-    height: 3vw;
-
-}
-
-#circlev {
-    color: #1a1818;
-}
-
-#visit {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#motive {
-    margin-top: 7vw;
-    padding: 0vw 10vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-#motive p {
-    line-height: 1.7;
-    font-weight: 600;
-    text-align: right;
-    position: relative;
-    right: 0;
-    letter-spacing: -.1vw;
-    font-size: 2vw;
-    width: 80%;
-
-}
-
-#motive span {
-    display: inline-block;
-
-    margin: 0px 10px;
-    background-color: red;
-    border-radius: 100px;
-    margin: 0px 13px;
-    margin-bottom: -12.5px;
-}
-
-#onespan {
-    width: 80px;
-    height: 40px;
-    background-image: url(etactics-inc-2qiXVelOgyw-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#twospan {
-    width: 120px;
-    height: 50px;
-    background-image: url(myriam-zilles-KltoLK6Mk-g-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#threespan {
-    width: 70px;
-    height: 40px;
-    background-image: url(traxer-Kb4pzjYleTg-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#pictures {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8vw;
-    padding: 3vw;
-    padding-left: 14vw;
-    padding-right: 12vw;
-}
-
-#firstbox {
-    width: 17vw;
-}
-
-#firstbox #firstpic {
-    width: 100%;
-    height: 24vw;
-    margin-bottom: 1vw;
-
-}
-
-#firstpic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#firstbox h2,
-#secpic h2 {
-    letter-spacing: -.1vw;
-    font-weight: 100;
-    border-radius: 20px;
-    font-size: 2vw;
-
-}
-
-#firstbox p,
-#secpic p {
-    font-size: 14px;
-    opacity: .8;
-    margin-top: 10px;
-    border-radius: 20px;
-
-}
-
-#secbox #firstpic {
-    width: 100%;
-    height: 42vw;
-    margin-bottom: 1vw;
-    border-radius: 20px;
-
-}
-
-#secbox {
-    width: 35vw;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-#banner {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 8vw;
-
-}
-
-#bimg {
-    width: 65%;
-    height: 60vh;
-    background-color: yellow;
-    border-radius: 20px;
-}
-
-#bimg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-
-
-}
-
-#btext {
-    width: 35%;
-    padding: 0px 3vw;
-
-}
-
-#btext h1 {
-    font-size: 3vw;
-    font-weight: 500;
-    letter-spacing: -.1vw;
-    line-height: 1;
-}
-
-#future {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-
-}
-
-#future iframe {
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-
-}
-
-#ftext {
-    position: relative;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#ftext button {
-    margin-top: 10px;
-    padding: 1vw 1.3vw;
-    font-size: .9vw;
-    font-weight: 700;
-    border-radius: 100px;
-    border: 1px solid rgb(83, 74, 74);
-    background-color: white;
-    color: rgb(59, 52, 52);
-}
-
-#login {
-    align-items: center;
-    padding: 0px 20px;
-
-}
-
-button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    /* for glow */
-    box-shadow: 0 0 5px lightseagreen,
-        0 0 25px lightseagreen;
-    background-color: rgba(32, 178, 171, 0.637);
-}
-
-button:hover {
-    box-shadow: 0 0 5px lightseagreen,
-        0 0 25px lightseagreen, 0 0 50px lightseagreen, 0 0 100px lightseagreen, 0 0 200px lightseagreen;
-}
-
-/* .getStartedButton {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-} */
