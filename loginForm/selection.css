@@ -24,7 +24,7 @@
     height: 90vh;
 
     /* glass morpho */
-    background: rgba(65, 194, 181, 0.25);
+    background: rgba(65, 194, 181, 0.11);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(3.5px);
     -webkit-backdrop-filter: blur(3.5px);
@@ -44,7 +44,8 @@
 }
 
 #box1, #box2 {
-    border: 2px solid rgba(0, 0, 0, 0.973);
+    border: 1px solid rgba(224, 216, 216, 0.37);
+    background-color: rgba(127, 255, 212, 0.116);
     border-radius: 20px;
     height: 30vh;
     width: 50vw;
