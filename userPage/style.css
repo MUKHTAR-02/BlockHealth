@@ -17,12 +17,17 @@ html,body{
     /* position: relative; */
 }
 
+#home {
+    width: 90%;
+    height: 100%;
+}
+
 #hero{
     /* justify-content: center;
     align-items: center; */
     /* position:relative; */
     /* display: flex; */
-    width:100vw;
+    width:100%;
     height: 85vh;
     
     background-repeat: no-repeat;
@@ -40,11 +45,10 @@ html,body{
 }
 
 #nav{
-    /* position:fixed; jb tk ye prop true h tb tk underline effect nhi aa paiga "BlockHealth" pr */
+    position:fixed; /* jb tk ye prop true h tb tk underline effect nhi aa paiga "BlockHealth" pr */ 
     padding: 1vw 5vw;
     /* height: 6   0px; */
-    width: auto;
-    /* height: 600px; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,6 +103,7 @@ html,body{
 
 #block{
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +122,8 @@ html,body{
     text-align: center;
     width: 50%;
     height: 100%;
+    margin-top: 100px;
+    margin-left: 110px;
     font-size: xx-large ;
     font-weight: bolder;
     /* background-color: aquamarine; */
@@ -165,12 +172,18 @@ html,body{
     gap: 5px;
 }
 
+#heroin {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 #motive{
-    margin-top: 10vw;
+    margin-top: 10vw;   
     text-align: center;
-    /* display: flex; */
     justify-content: center;
-    align-items: center;
+    align-items: center ;   
+
     /* padding: 0vw 10vw; */
     /* display: flex; */
     /* justify-content: space-between; */
@@ -183,7 +196,6 @@ html,body{
     /* right: 0; */
     letter-spacing: -.1vw;
     font-size: 1.5vw;
-    width: 80%;
 
 }
 #motive span{
@@ -218,9 +230,10 @@ html,body{
 }
 
 #security{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-
-    height: 100%;
+    height: auto;
     margin: 20px;
     margin-top: 50px;
 }
@@ -228,7 +241,6 @@ html,body{
 #securityInfo {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
 }
 
 #securityText{
@@ -260,13 +272,16 @@ html,body{
     border-radius: 20px;
 }
 
+.metaData {
+    
+}
+
 #pictures{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 8vw;
-    padding: 3vw;
-    padding-left: 14vw;
-    padding-right: 12vw;
+    /* padding-left: 12vw; */
+    /* padding-right: 12vw; */
 }
 #firstbox{
     width: 17vw;
@@ -310,17 +325,17 @@ html,body{
     flex-direction: column;
     align-items: end;
 }
-#banner{
+#banner, #banner2{
     display: flex;
     align-items: center;
-    width: 85%;
+    justify-content: center;
+    margin-left: 20px;
     margin-top: 8vw;
 
 }
-#bimg{
+#bimg, #bimg2{
     width: 65%;
     height: 60vh;
-    background-color: yellow;
     border-radius: 20px;
 }
 #bimg img{
@@ -330,21 +345,7 @@ html,body{
     border-radius: 20px;
 }
 
-#banner2{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 85%;
-    margin-top: 8vw;
-    margin-left: 30px;
-
-}
-
-#bimg2{
-    width: 65%;
-    height: 60vh;
-}
-#bimg2 img{
+#bimg2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -399,11 +400,7 @@ html,body{
      background-color: white;
      color: rgb(59, 52, 52);
 } */
-#login{
-    align-items: center;
-    padding: 0px 20px;
 
-}
 button{
     padding: 10px 20px;
     border-radius:20px;
