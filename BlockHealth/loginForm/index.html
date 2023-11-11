@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="/imgFiles/favicon.jpg"/>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="form-parent">
+                <div class="sign-up-img"></div>
+                <div class="sign-in-img"></div>
+        
+                <div class="form-container">
+                    <div class="form" id="sign-in-form">
+                        <h1 class="title" style="color: black;">sign in</h1>
+                        <div class="fields">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                        </div>
+                        <div class="submit-container">
+                            <button type="submit" class="btn">sign in</button>
+                            <p class="link" onclick="switchForm('register')">new here ? sign up here</p>
+                        </div>
+                    </div>
+                    <div class="form" id="sign-up-form">
+                        <h1 class="title" style="color: black;">sign up</h1>
+                        <div class="fields">
+                            <input type="text" placeholder="name">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                        </div>
+                        <div class="submit-container">
+                            <button type="submit" class="btn">sign up</button>
+                            <p class="link" onclick="switchForm('login')">already have an account ? sign in here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
