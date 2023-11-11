@@ -22,13 +22,68 @@
     margin: 20px;
 }
 
-#para {
+/*box1*/
+#aboutBox1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+h1{
+    color: #000033;
+    font-weight: bold;
+    font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Lora', serif;
+font-family: 'Mulish', sans-serif;
+}
+.box1-content{
+    margin-left: 25px;
+}
+img{
+    border-radius: 50%;
+    cursor: cell;
+}
+/* img:hover{
+    cursor: cell;
+} */
+p{
+    margin-top: 10px;
+    color: #000066;
+    font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Lora', serif;
+font-family: 'Mulish', sans-serif;
     /* border: 2px solid red; */
 }
+.content-detail_img{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.content-detail_img a{
+    margin-right: 15px;
+}
 
-
-
-
+/* box2 */
+#aboutBox2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .box3 */
+#aboutBox3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box3-content{
+    margin-left: 25px;
+}
+/* box4 */
+#aboutBox4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
