@@ -187,6 +187,7 @@ html,body{
     flex-direction: column;
     /* background-image: url(/imgFiles/bgImg.jpg);
     background-repeat: no-repeat; */
+    font-size:20px;
     
 }
 
@@ -285,8 +286,8 @@ html,body{
     border-radius: 20px;
 }
 
-.metaData {
-    
+.metaData h2{
+    font-size: 20px;
 }
 
 #pictures{
