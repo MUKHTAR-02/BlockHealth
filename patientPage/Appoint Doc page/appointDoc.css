@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.row{
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.box-image{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ratting{
+    margin: 10px;
+}
+i{
+    color: gold;
+}
+.doc-name{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.doc-name h4{
+    font-size: 20px;
+}
+.doc-name p{
+    margin-bottom: 5px;
+}
+.doc-name a{
+    /* color: #000080; */
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+.doc-name a:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
